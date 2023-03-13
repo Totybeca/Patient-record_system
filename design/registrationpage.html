@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+		<style>
+		#patient-record-system{
+                background-color: rgba(35, 34, 57, 0.7);; 
+                padding-left: 60px;
+                padding-right: 60px;
+                padding-top:  180px;
+                padding-bottom: 60px;
+               
+                max-width: 600px;
+                margin: auto;
+                font-size: 18px;
+                color: white;
+                border-radius: 5px;
+                font-size: 20px;
+                
+                
+                
+            }
+            .tag{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                
+                
+               
+            }
+            input, select, textarea{
+                padding: 8px;
+                border-radius: 5px;
+                font-size: 18px;
+                color: gray;
+                margin-top: 10px;
+            }
+            h1{
+              font-size: 40px;
+              font-weight: bold;
+              text-align: center;
+              text-transform: uppercase;
+              color: white;
+             
+            }
+            p{
+                font-style: italic;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                 
+            }
+            button{
+                width: 100%;
+                padding: 8px;
+                font-size: 18px;
+                color: gray;
+                border-radius: 5px;
+                background-color:lightcyan;
+            }
+            body{
+                background-image: url("https://miro.medium.com/max/500/1*ObQTHdkk2qPLe9l3yj5r4w.jpeg");
+                background-color:  rgba(35, 34, 57, 0.8);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: overlay;
+                
+            }
+            #gb{
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                background: #3A3B3C;
+                top: 0;
+                left: 0;
+            }
+
+		</style
+		
+		
+
+
+	<div id="gb">    
+        <h1 id="title">Registration Page</h1>
+		<p id="description">This is registration page for Patient Record System.</p>
+    
+</head>
+<body>
+div>
+        <form id="Patient Record System">
+            
+            
+            <div class="tag">
+            <label for ="firstname" id="firstname-label">First Name</label>
+            <input type="text" id="firstname" name="firstname"  placeholder="Enter your first name"   required>
+            </div> 
+			<div class="tag">
+            <label for ="lastname" id="lastname-label">Last Name</label>
+            <input type="text" id="lastname" name="lastname"  placeholder="Enter your last name"   required>
+            </div>
+			
+			  select>
+			<div class="tag">
+                <label for="age" id="number-label">Age(optional)</label>
+                <input type="number" id="number" name="age"  min="18" max="45" placeholder="age" >
+            </div>
+
+            <div class="tag">
+                <label for="email" id="email-label">Email</label> 
+                <input type="email" id="email"   placeholder="Enter your email" required>
+            </div>
+			<div class="tag">
+                <label for="mobilenumber" id="mobilenumber-label">Mobile Number</label> 
+                <input type="number" id="mobilenumber"   placeholder="Enter your mobile number" required>
+            </div>
+			<div class="tag">
+                <label for="address" id="address-label">Address</label> 
+                <input type="text" id="address"   placeholder="Enter your address" required>
+            </div>
+			<label for="gender" id="gender-label">Gender</label>
+			<select name="gender">
+			<option value="">Please select one…</option>
+			<option value="female">Female</option>
+			<option value="male">Male</option>
+			<option value="non-binary">Non-Binary</option>
+			<option value="other">Other</option>
+			<option value="Prefer not to answer">Perfer not to Answer</option>
+			</div>
+            
+            <div class="tag">
+                
+                <label for="description">Employment</label>
+                <select name="select-occupation" id="dropdown" >
+                    <option value=""disabled selected hidden>Select Employment</option>
+                <option value="student">Student</option>
+				<option value="part time job">Employed</option>
+				<option value="part time job">Self Employed</option>
+				<option value="part time job">Unemployed</option>
+                <option value="full time job">Full Time Job</option>
+                <option value="part time job">Part Time Job</option>
+				<option value="prefer not to say">Prefer Not to Say</option>
+                <option value="other">Other</option> 
+                </select>
+                </div>
+        
+                    <div class="tag">
+                    <label>Why  do you want to see a doctor/Complaints?</label>
+                    <textarea placeholder="Enter your comments here" rows="7"></textarea>
+                  </div>
+                    
+                    
+                   
+                        <button type="submit" id="submit" name="submit" value="submit">Submit</button>
+                    
+        </form>
+		</body>
+        
