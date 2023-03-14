@@ -13,7 +13,7 @@
                 max-width: 600px;
                 margin: auto;
                 font-size: 18px;
-                color: white;
+                color: hsl(0, 25%, 97%);
                 border-radius: 5px;
                 font-size: 20px;
                 
@@ -60,7 +60,7 @@
             }
             body{
                 background-image: url("image.jpg");
-                background-color:  rgba(35, 34, 57, 0.8);
+                background-color:  hsla(258, 73%, 47%, 0.8);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-blend-mode: overlay;
@@ -80,7 +80,7 @@
 <body>
 <div id="gb">    
         <h1 id="title">Patient Record Form</h1>
-        <p id="description">Patient Record System for Kinetic Hospital.</p></div>
+        </div>
         <form id="record-form">
              
             <div class="tag">
@@ -105,7 +105,7 @@
             </div>
             <div class="tag">
                 <label for="address" id="address-label">Address</label> 
-                <input type="text" id="address"   placeholder="Enter your address" required>
+                <textarea placeholder="Enter your address here" rows="3"></textarea>
             </div>
             <div class="tag">
                 <label for="gender" id="gender-label">Gender</label>
@@ -113,8 +113,6 @@
 			<option value="">Please select one…</option>
 			<option value="female">Female</option>
 			<option value="male">Male</option>
-			<option value="non-binary">Non-Binary</option>
-			<option value="other">Other</option>
 			<option value="Prefer not to answer">Perfer not to Answer</option>
             </select>
 			</div>
@@ -132,11 +130,7 @@
                 <option value="other">Other</option> 
                 </select>
                 </div>
-                    <div class="tag">
-                    <label>Any Complaints?</label>
-                    <textarea placeholder="Enter your complaints here" rows="7"></textarea>
-                  </div>
-                    <button type="submit" id="submit" name="submit" value="submit">Submit</button>
+                <button type="submit" id="submit" name="submit" value="submit">Submit</button>
                     
         </form>
 		</body>
