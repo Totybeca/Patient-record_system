@@ -1,0 +1,13 @@
+*.pyc
+*.pyo
+*.egg-info
+*.kivy
+/venv
+/build
+/dist
+# *.ipynb
+# IntelliJ IDEA / PyCharm
+/.idea
+*.iml
+migrations
+app.db
