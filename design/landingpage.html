@@ -3,11 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+   
 	<style>
-#navbar{
+        
+            #navbar{
                
                width: 100vw;
-               background-color: black;
+               background-color: blue;
                padding:10px;
                top:0;
                left: 0;
@@ -38,27 +40,27 @@
              font-size: 20px;
              }
              #navbar a:hover{
-                   background-color: yellow;
+                   background-color: lightblue;
                    color: black;
                }
              #welcome-section{
-                   height: 643px;
+                   height: 800px;
                    width: 100%;
                    font-size: 50px;
                    text-align: center;
-                   background-color: orange;
+                   background-image:url(https://d.newsweek.com/en/full/997973/doctor-stock.jpg);
                }    
              .sec{
               }     
              h1{
                 margin-top: 0;
                 padding-top: 140px;
-                color: whitesmoke;
+                color: red;
                 font-weight: bold;
                } 
              h4{
               margin-top: -60px;  
-              color: purple;
+              color: blue(17, 0, 128);
               font-size: 30px;
               font-style: italic;
                }
@@ -144,7 +146,7 @@
                 max-width: 600px;
                 margin: auto;
                 font-size: 18px;
-                color: hsl(0, 25%, 97%);
+                color: blue;
                 border-radius: 5px;
                 font-size: 20px;
                 }     
@@ -170,6 +172,20 @@
                 border-radius: 5px;
                 background-color:black;
                 }
+            .about {
+                background-color: #3498db;
+                color: #fff;
+                padding: 50px;
+                text-align: center;
+                }
+                .about h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                }
+            .about p {
+                font-size: 18px;
+                line-height: 1.5;
+                }
            .foot{
                       background-color: purple;
                       font-size: 20px;
@@ -192,13 +208,12 @@
 	<nav id="navbar">
             <ul>
                 <li>
-                    <a class="nav-link" href="#welcome-section">About</a></li>
+                    <a href="#contact" class="About">About Us</a> 
                 <li><a class="nav-link" href="#contact">Contacts</a></li>
             </ul>
             </nav>
 			
-       
-        
+           
     <section id="welcome-section">
             <div>
             <h1>Welcome To Kinetic Hospital</h1>
@@ -223,7 +238,19 @@
             <i class="fab fa-twitter-square"> twitter</i> <i class="fab fa-github"> github</i>
             <i class="fas fa-at"> Send a mail</i> <i class="fas fa-mobile"> Call us</i></div>
             </section>
-            <div style="height: 2px; background-color: yellow;"></div>
+    <section id="about">
+            <div class="about">
+                <h2>About Us</h2>
+                <p>We are a team of passionate and experienced developers who believe in leveraging technology to improve the healthcare industry.
+                </p>
+                <p>Our mission is to provide healthcare professionals with a powerful yet user-friendly platform to manage patient records efficiently and securely. With our patient record system, healthcare providers can streamline their workflows, reduce errors, and improve patient outcomes.</p>
+                <p>Our team comprises seasoned developers, designers, and healthcare professionals who understand the unique challenges of managing patient records. We have worked tirelessly to create a robust and secure platform that meets the highest standards of data privacy and security.</p>
+                <p>We believe that every healthcare professional should have access to the best tools and resources to provide the best care to their patients. That's why we built our patient record system web application with the latest technology, intuitive design, and robust features that allow healthcare providers to manage their patients' records seamlessly.</p>
+                <P>At our core, we are committed to making a positive impact on the healthcare industry. Our patient record system web application is just the beginning of our journey, and we are excited to continue to innovate and improve healthcare technology to make a difference in patients' lives.</p>
+                <p>Thank you for choosing our patient record system web application. We look forward to working with you and supporting you in providing exceptional patient care.</p>
+            </div>
+    </section>
+            <div style="height: 2px; background-color: blue;"></div>
             <div class="foot">
             <footer>
             <div>**At Kinetic Hospital, You get the best health care.
