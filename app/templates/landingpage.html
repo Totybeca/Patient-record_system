@@ -191,16 +191,12 @@
         <li><a class="nav-link" href="#contact">Contacts</a></li>
     </ul>
 </nav>
-
-
-
 <section id="welcome-section">
     <div>
         <h1>Welcome To Kinetic Hospital</h1>
         <h4>Patient Record System</h4>
     </div>
     <div id="gb">
-
         <form id="record-form">
             <div class="tag">
                 {{ form.hidden_tag() }}
@@ -209,16 +205,14 @@
                 <!-- {{ form.card_no.label }}<br> -->
                 {{ form.card_no(placeholder='Enter your card number here') }}<br>
                 {% for error in form.card_no.errors %}
-                <span style="color: red";>[{{ error }}]</span>
-                {% endfor %}
+                <span style="color: red" ;> [{{ error }}]</span>
+                {% end for %}
                 <br>
                 <button type="submit" id="submit" name="submit" value="submit">Submit</button>
                 <!-- {{ form.submit() }} -->
             </div>
             <a href="{{ url_for('register') }}">Register Now</a>
-
         </form>
-    </section>
     <section id="contact">
         <h2>Health is wealth...</h2>
         <h3>Consult your doctor today!</h3>
