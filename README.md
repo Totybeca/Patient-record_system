@@ -1,3 +1,10 @@
+Project name: Patient record system
+
+This project is about record keeping in hospitals. To reduce the volumnious work of staff, and
+to reduce time wastage and to get things done on time.
+
+link to the deployed project:
+https://totybeca.github.io/
 
 
 Assignment
